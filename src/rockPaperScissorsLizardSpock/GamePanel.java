@@ -23,8 +23,8 @@ import javax.swing.JPanel;
 public class GamePanel extends JPanel {
 
 	String[] choices = { "rock", "paper", "scissors", "lizard", "Spock" };
-	String[] fileNames = { "rock.jpg", "paper.jpg", "scissors.jpg",
-			"lizard.jpg", "Spock.jpg" };
+	String[] fileNames = { "img//rock.jpg", "img//paper.jpg", "img//scissors.jpg",
+			"img//lizard.jpg", "img//Spock.jpg" };
 
 	Signs paper;
 	Signs rock;
@@ -108,7 +108,7 @@ public class GamePanel extends JPanel {
 		sheldonWin = new JLabel();
 		sheldonWin.setSize(810, 600);
 		sheldonWin.setLocation(0, 0);
-		ImageIcon sheldonWinIcon = new ImageIcon("sheldonWins.jpg");
+		ImageIcon sheldonWinIcon = new ImageIcon("img//sheldonWins.jpg");
 		sheldonWin.setIcon(sheldonWinIcon);
 		sheldonWin.setOpaque(true);
 		sheldonWin.setVisible(false);
@@ -120,7 +120,7 @@ public class GamePanel extends JPanel {
 
 	// draw background
 	public void paintComponent(Graphics g) {
-		Image background = new ImageIcon("bazinga.jpg").getImage();
+		Image background = new ImageIcon("img//bazinga.jpg").getImage();
 		g.drawImage(background, 0, 0, this);
 	}
 
@@ -204,7 +204,7 @@ public class GamePanel extends JPanel {
 
 	//set background music
 	public void playSound() {
-		String file = "The Big Bang Theory - Full.wav";
+		String file = "img//The Big Bang Theory - Full.wav";
 		File soundFile;
 		Clip clip;
 		AudioInputStream audioIn;
